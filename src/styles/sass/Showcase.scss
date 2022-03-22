@@ -1,0 +1,87 @@
+@keyframes move {
+    0% { transform: translate(100%); }
+    100% { transform: translate(-100%); }
+
+}
+
+.showcase {
+    min-height: 100vh;
+    width: 100%;
+    background: $light-grey;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+
+    &>*:first-child {
+        animation-duration: 15s;
+    }
+    &>*:last-child {
+        animation-duration: 10s;
+    }
+}
+.row1 {
+    white-space: nowrap;
+    box-sizing: content-box;
+    margin: 2rem 0;
+    display: flex;
+    animation: move  linear infinite none ;
+}
+.row2 {
+    white-space: nowrap;
+    box-sizing: content-box;
+    margin: 2rem 0;
+    display: flex;
+    animation: move  linear infinite reverse;
+}
+.image-cont {
+    width: 15rem;
+    margin: 0 1rem;
+    background: $silver-pink;
+    border-radius: 20px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: .8rem 1rem;
+    background: $grey;
+    border: 2px solid $white;
+    padding: .5rem;
+    color: $white;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    span {
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 1.3rem;
+        height: auto;
+    }
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 40em) {
+   
+}

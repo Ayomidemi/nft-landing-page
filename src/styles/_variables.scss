@@ -1,0 +1,32 @@
+$primary:  #ff69b4;
+$secondary:  #4169e1;
+$main-text:  #202020;
+$black: #000;
+$white: #fff;
+$grey: #808080;
+$carousel-color: #EEEDDE;
+$red: #ff0000;
+$green: #90ee90;
+$light-grey: #fffafa;
+$dark-grey: #696969;
+$silver-pink: #c4aead;
+$grain: #dcdcdc;
+
+
+$fontxs: 0.75em;
+$fontsm: 0.875em;
+$fontmd: 1em; // 1em = 16px
+$fontlg: 1.25em;
+$fontxl: 2em;
+$fontxxl: 3em;
+$fontxxxl: 4em;
+
+$fontButton: 0.875em;
+
+$linear: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500&family=Montserrat:wght@300;400;500&display=swap');
+
+$font-poppins: 'Montserrat', sans-serif;
+

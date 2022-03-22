@@ -1,0 +1,172 @@
+@import '../variables';
+
+@keyframes rotat {
+    100% {transform: rotate(1turn);}
+}
+
+.home {
+    min-height: calc(100vh + 5rem);
+    position: relative;
+    width: 100vw;
+}
+.container {
+    width: 75%;
+    min-height: 80vh;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.typewriter {
+    font-size: 2.2rem;
+    width: 80%;
+    align-self: flex-start;  
+}
+.typewrite-1 {
+    color: $primary;
+}
+.typewrite-2 {
+    color: $secondary;
+}
+.typewrite-3 {
+    color: $green;
+}
+.subtitle {
+    width: 80%;
+    align-self: flex-start;  
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.buttn {
+    cursor: pointer;
+    width: 15rem;
+    background: $linear;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-size: 15px;
+    align-self: flex-start;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+.hrf {
+    align-self: flex-start;
+}
+.video-cont {
+    width: 100%;
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.rounded {
+    position: absolute;
+    bottom: 2rem;
+    right: 90%;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    
+
+    img {
+        height: auto;
+        animation: rotat 6s linear infinite reverse ;
+    }
+
+}
+.circle {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $primary;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 64em) {
+    .container {
+        width: 85%;
+    }
+    .video-cont {
+        min-width: 40vh;
+    }
+    .rounded {
+        width: 4rem;
+        height: 4rem;
+        left: none;
+        right: 2rem;
+        bottom: 101vh;
+    }
+    .circle {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+@media (max-width: 48em) {
+
+.typewriter {
+    font-size: 1.8;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.subtitle {
+    font-size: 1rem;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    flex-direction: column-reverse;
+    width: 100%;
+
+    &>*:first-child {
+        width: 100%;
+        margin-top: 2rem;
+        
+    }
+}
+.buttn{
+    align-self: center;
+    text-align: center;
+
+    button {
+        margin: 0 auto;
+    }
+}
+
+}
+
+
+@media (max-width: 40em) {
+
+    .typewriter {
+        font-size: 1.4rem;
+    }
+}

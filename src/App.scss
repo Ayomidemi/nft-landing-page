@@ -1,0 +1,16 @@
+@import './styles/variables';
+@import './styles/base';
+
+
+@import './styles/sass/Home.scss';
+@import './styles/sass/About.scss';
+@import './styles/sass/Footer.scss';
+@import './styles/sass/Navbar.scss';
+@import './styles/sass/Roadmap.scss';
+@import './styles/sass/Faq.scss';
+@import './styles/sass/Showcase.scss';
+@import './styles/sass/Team.scss';
+
+.contain {
+    overflow: hidden;
+}
